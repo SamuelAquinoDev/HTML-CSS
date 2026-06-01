@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte</h2>
+    <p>O comando document.getElementByI('teste') é escrito em linguagem JavaScript. Perceba que a fonte não é monoepaçada, ou seja, não reserva o mesmo espaço pra cada letra</p>
+    <p>O comando <code>document.getElementById</code>('teste') é escrito em linguagem JavaScript. Perceba, agora, que o <code>document.getElementById</code> possui uma fonte monoespaçada, logo se torna mais fácil de compreender quais são as letras usadas. A tag usada pra isso é a tag "code"</code></p>
+    <pre>
+        <code>
+    num = int(input('Digite um Número'))
+    if num % 2 == 0:
+        print(f'O número {int} é PAR')
+    else:
+        print(f'O número {int} é ÍMPAR')
+    print('Fim do Programa')
+        </code>
+    </pre>
+    <p>O Código acima foi feito usando a tag "pre". Ela faz com que tudo dentro dela tenha, no site, exatamente o mesmo posicionamento que no código</p>
+    <!--Uma coisa interessante aprendida na aula de hoje: Indentação é basicamente a organização do código-->
+    <h2>Citações</h2>
+    <p>O pai de um amigo de Gustavo Guanabara uma vez disse: <q>O Computador é um burro muito rápido</q></p>
+    <p>A citação acima foi feita utilizando a tag <q>q</q>. Se você olhar apenas para a estética, ela apenas adiciona aspas ao redor do seu texto. Já se olhar por um ponto de visto semântico, ou seja , de significado, essa tag dá um significado muito maior à citação, porque q vem quote, que significa citação. Ou seja, você não apenas adiciona uma aparência de citação ao seu texto, mas também o significado/p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Noble, em seu livro HTML e XHTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/EGp9DgAAQBAJ?hl=pt-BR&gbpv=1&dq=jeff+noble+html+e+xhtml+para+leigos&pg=PP2&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr> e estou gostando muito!</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>

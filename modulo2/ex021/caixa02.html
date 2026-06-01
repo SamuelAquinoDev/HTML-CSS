@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+            border-radius: 20px 0px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            /*
+            
+            Shorthand = border-radius: 10px ou border-radius: 10px 10px 10px 10px;
+
+            Todas as tags que mexem com laterais, topo e base, devem ser organizados no sentido do relógio:
+
+            exemplo: border-radius = 1. top-left 2. top-right 3. bottom-right 4. bottom-left
+
+            é possível também usar a notação de 2 valores, que vai agir, 1, no canto superior esquerdo e inferior direito, e 2, no canto superior direito e inferior esquerdo
+
+            exemplo: border-radius: 10px 20px; (10px para os cantos 1 e 3, e 20px para os cantos 2 e 4)
+            
+            */
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+
+            border-radius: 5px 10px 20px 0px;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 3px;
+            box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.262);
+        }
+
+        header > h1 {
+            background-color: rgb(226, 226, 226);
+            box-shadow: inset 0px 0px 10px 2px black;
+            padding: 1;
+        }
+
+        nav > a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        nav > a:active {
+            color: red;
+        }
+
+        article {
+            background-color: lightsteelblue;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(131, 145, 164);
+        }
+
+        div.bola {
+            height: 100px;
+            width: 100px;
+            margin: 25px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
+            box-shadow: inset 0px 0px 10px 2px rgb(157, 157, 157);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Folha de Lisboa</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Serviços</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Porto vence o Bayern e avança na Champions</h2>
+                <p>O Porto venceu o Bayern de Munique por 2 a 1 e avançou na Champions League. Em uma noite que já entrou para a história do futebol europeu, o FC Porto derrotou o poderoso Bayern de Munique por 2 a 1 e garantiu vaga nas semifinais da Liga dos Campeões. Jogando com intensidade, disciplina tática e um espírito quase guerreiro, a equipe portuguesa mostrou que tradição pesa — e muito — quando a bola rola. Desde o apito inicial, o Porto deixou claro que não entraria em campo para se defender. Pressionando alto e explorando os espaços nas costas da defesa alemã, os Dragões abriram o placar ainda no primeiro tempo, após uma roubada de bola agressiva no meio-campo que terminou em finalização precisa no canto. O Bayern, como esperado, reagiu. Com maior posse de bola e tentando impor seu ritmo, a equipe alemã chegou ao empate em uma jogada trabalhada, mostrando sua qualidade técnica. Mas o que parecia ser o início de uma virada acabou se tornando o gatilho para a resposta portuguesa. No segundo tempo, o Porto voltou ainda mais ligado. Em uma jogada rápida de transição — quase um contra-ataque cirúrgico — veio o gol da vitória: chute forte, sem chance para o goleiro, incendiando o estádio e colocando os portugueses novamente em vantagem. Os minutos finais foram de pura tensão. O Bayern pressionou, mas encontrou uma defesa organizada, compacta e com jogadores dispostos a dar a vida em cada dividida. O apito final selou não só a vitória, mas um verdadeiro manifesto: o futebol não se ganha só com nomes, mas com coragem, estratégia e fome de vitória. Com o resultado, o Porto avança às semifinais da Champions League, reacendendo a chama de suas campanhas históricas. Para o Bayern, fica a frustração de uma eliminação precoce — e o lembrete de que, na Europa, qualquer vacilo pode custar tudo. Agora, os olhos do continente se voltam para Portugal. Porque quando um time joga com alma… gigante nenhum é invencível.</p>
+                <aside>
+                    <p>Artigo escrito por José Mourinho, publicado em 01/01/2024</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        Redes sociais: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </footer>
+
+    <div class="bola">
+
+    </div>
+</body>
+</html>

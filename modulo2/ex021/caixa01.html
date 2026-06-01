@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*Box-Level*/
+
+            /*display: inline; /*Transforma o elemento em um Box-Level, mas mantém as características de um elemento Inline-Level*/
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*Shorthand: padding: 10px;*/
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+            /*Shorthand: margin: 10px 10px 40px 10px;*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            /*Shorthand: outline: 5px dashed salmon;*/
+        }
+
+        a { /*Inline-Level*/
+
+            /*display: block; /*Transforma o elemento em um Box-Level, mas mantém as características de um elemento Inline-Level*/
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            /*Shorthand: border: 10px solid red;*/
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>Parágrafos também são exemplos de Caixas Box-Level, mas os <a href="#">Links</a> são exemplos de Caixas Inline-Level. Vamos ver como tudo isso funciona</p>
+    <br>
+    <h1>Tipos de borda:</h1>
+    <h2>Borda sólida</h2>
+    <p style="border: 3px solid yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illum rem! Dignissimos, perspiciatis fugiat in nam eligendi magni dicta delectus sit molestiae recusandae reprehenderit distinctio saepe quis. Accusamus, tempora optio.</p>
+    <h2>Borda tracejada</h2>
+    <p style="border: 3px dashed blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illum rem! Dignissimos, perspiciatis fugiat in nam eligendi magni dicta delectus sit molestiae recusandae reprehenderit distinctio saepe quis. Accusamus, tempora optio.</p>
+    <h2>Borda pontilhada</h2>
+    <p style="border: 3px dotted green;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illum rem! Dignissimos, perspiciatis fugiat in nam eligendi magni dicta delectus sit molestiae recusandae reprehenderit distinctio saepe quis. Accusamus, tempora optio.</p>
+    <h2>Borda dupla</h2>
+    <p style="border: 3px double purple;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illum rem! Dignissimos, perspiciatis fugiat in nam eligendi magni dicta delectus sit molestiae recusandae reprehenderit distinctio saepe quis. Accusamus, tempora optio.</p>
+    <h2>Borda groove</h2>
+    <p style="border: 10px groove orange;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illum rem! Dignissimos, perspiciatis fugiat in nam eligendi magni dicta delectus sit molestiae recusandae reprehenderit distinctio saepe quis. Accusamus, tempora optio.</p>
+    <h2>Borda ridge</h2>
+    <p style="border: 10px ridge blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, illum rem! Dignissimos, perspiciatis fugiat in nam eligendi magni dicta delectus sit molestiae recusandae reprehenderit distinctio saepe quis. Accusamus, tempora optio.</p>
+</body>
+</html>

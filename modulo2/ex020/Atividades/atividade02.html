@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+    <style>
+        div {
+            display: inline-block;
+            vertical-align: top;
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: black;
+        }
+
+        div.forca {
+            background-color: lightpink;
+        }
+
+        div.tecnica {
+            background-color: lightgreen;
+        }
+
+        div.inteligencia {
+            background-color: lightyellow;
+        }
+
+        div.forca:hover {
+            background-color: red;
+            color: white;
+        }
+
+        div.tecnica:hover {
+            background-color: green;
+            color: white;
+        }
+
+        div.inteligencia:hover {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha seu Caminho:</h1>
+
+    <div class="forca">
+        Caminho da Força
+        <p>Este é o caminho da força bruta.</p>
+    </div>
+    
+    <div class="tecnica">
+        Caminho da Técnica
+        <p>Este é o caminho da técnica e da estratégia.</p>
+    </div>
+
+    <div class="inteligencia">
+        Caminho da Inteligência
+        <p>Este é o caminho da inteligência e do conhecimento.</p>
+    </div>
+</body>
+</html>

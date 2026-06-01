@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas</title>
+</head>
+<body>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="1940slowdance.mp3" controls autoplay></audio>
+    <!--COMPATÍVEIS COM TODOS OS NAVEGADORES: MP3 WAV OGG-->
+    <p>A tag 'audio' ainda pode ser usada, mas é bastante limitada</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="1940slowdance.mp3" type="audio/mpeg">
+        <source src="1940slowdance.ogg" type="audio/ogg">
+        <source src="1940slowdance.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compat´vel com nenhum dos formatos de áudio disponíveis. <a href="1940slowdance.mp3">Clique aqui para baixar o arquivo do áudio</a></p>   
+    </audio>
+</body>
+</html>

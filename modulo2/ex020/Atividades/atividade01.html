@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: aquamarine;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: black;
+        }
+
+        #p1 {
+            background-color: red;
+        }
+
+        #p2 {
+            background-color: blue;
+        }
+
+        div:hover {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Passe o mouse aqui
+        <p id="p1">VOCÊ DESCOBRIU O TEXTO SECRETO...</p>
+        <p id="p2">E O TEXTO SECRETO DIZ...</p>
+    </div>
+</body>
+</html>
+
+
+
+
