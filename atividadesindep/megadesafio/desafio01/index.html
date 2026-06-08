@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotina</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #saudacao {
+            background-color: antiquewhite;
+            border: 1px solid black;
+            padding: 15px;
+            justify-self: center;
+        }
+
+        hr {
+            height: 1px;
+            background-color: black;
+        }
+
+        #rotina {
+            background-color: antiquewhite;
+            margin: 50px 50px auto;
+            padding: 50px;
+            border: 1px solid black;
+        }
+
+        #rotina > div {
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        #rotina > div:hover {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #rotina > div > ul {
+            display: none;
+        }
+
+        #rotina > div:hover > ul {
+            display: block;
+        }
+
+        #manha:hover {
+            background-color: rgb(252, 192, 192);
+        }
+
+        #manha:hover > h2 {
+            color: rgb(186, 0, 0);
+        }
+
+        #tarde:hover {
+            background-color: rgb(255, 239, 188);
+        }
+
+        #tarde:hover > h2 {
+            color: rgb(154, 136, 0);
+        }
+
+        #noite:hover {
+            background-color: rgb(214, 172, 255);
+        }
+
+        #noite:hover > h2 {
+            color: rgb(91, 0, 226);
+        }
+    </style>
+</head>
+<body>
+    <div id="saudacao">
+        <h1 id="saudacoes"></h1>
+        <h2 id="data_hora"></h2>
+    </div>
+    <div id="rotina">
+        <h1>Minha rotina</h1>
+        <hr>
+        <div id="manha">
+            <h2>Manhã</h2>
+            <ul>
+                <li>5:50h - Acordar, Água, Creatina e colocar água pra aquecer</li>
+                <li>5:55h - Tomar banho</li>
+                <li>6:00h - Creme e Café</li>
+                <li>6:05h - Se arrumar</li>
+                <li>6:15h - Sair</li>
+                <li>6:30h - Ir para a parada e conversar (obrigatório)</li>
+                <li>6:50h - Pegar o Ônibus e ver as coisas da escola</li>
+                <li>7:35h - Sol antes da aula</li>
+                <li>7:40h - Aula</li>
+                <li>9:55h - Lanche e Sol</li>
+                <li>10:20h - Aula</li>
+                <li>11:40h - Pegar o Ônibus</li>
+                <li>12:15h - Pegar a Bicicleta</li>
+                <li>12:25h - Chegar em casa</li>
+            </ul>
+        </div>
+        <div id="tarde">
+            <h2>Tarde</h2>
+            <ul>
+                <li>12:30h - Tomar Sol</li>
+                <li>13:00h - Almoço</li>
+                <li>13:45h - Estudar HTML e CSS</li>
+                <li>14:15h - Estudar Javascript</li>
+                <li>14:45h - Estudar Banco de Dados</li>
+                <li>15:25h - Estudar Finanças</li>
+                <li>15:55h - Descansar</li>
+                <li>16:00h - Trabalhos da escola</li>
+                <li>17:00h - Treinar Boxe</li>
+                <li>17:30h - Comer bem</li>
+                <li>18:30h - Fim do "Expediente"</li>
+            </ul>
+        </div>
+        <div id="noite">
+            <h2>Noite</h2>
+            <ul>
+                <li>18:30h - Descansar</li>
+                <li>19:30h - Anotar o Dia (Diário)</li>
+                <li>19:45h - Tomar banho quente</li>
+                <li>20:00h - Escovar os dentes</li>
+                <li>20:05h - Relaxar</li>
+                <li>21:00h - Leitura</li>
+                <li>21:30h - Deitar</li>
+                <li>22:00h - Cair no Sono</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+
+        let agora = new Date()
+        let hora = agora.getHours()
+        let minuto = agora.getMinutes()
+        let segundo = agora.getSeconds()
+
+        let msg
+
+        if (hora < 12) {
+            msg = `Bom dia ${nome}!`
+        } else if (hora < 18) {
+            msg = `Boa tarde ${nome}!`
+        } else {
+            msg = `Boa noite ${nome}!`
+        }
+
+        function atualizarDataHora() {
+            let agora = new Date()
+            let dia = String(agora.getDate()).padStart(2, "0")
+            let mes = String(agora.getMonth()).padStart(2, "0")
+            let ano = String(agora.getFullYear()).padStart(4, "0")
+            let hora = String(agora.getHours()).padStart(2, "0")
+            let minuto = String(agora.getMinutes()).padStart(2, "0")
+            let segundo = String(agora.getSeconds()).padStart(2, "0")
+
+            document.getElementById('data_hora').innerHTML = String(`${dia}/${mes}/${ano} | ${hora}:${minuto}:${segundo}`)
+        }
+
+        setInterval(atualizarDataHora, 1000)
+
+        document.getElementById('saudacoes').innerHTML = msg
+        document.getElementById('data_hora').innerHTML = `${data} | ${hora}:${minuto}:${segundo}`
+    </script>
+</body>
+</html>
