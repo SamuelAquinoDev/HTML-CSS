@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            margin: auto;
+            position: relative;
+            /*Não é necessário fazer com que o container tenha uma posição relativa, porque qualquer box tem posição relativa por natureza*/
+            background-color: purple;
+            height: 96vh;
+            padding: 25px;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que contém o conteúdo deve ter poosição relativa, e o que é contido precisa ter posição absoluta. Quando se coloca posição absoluta em um objeto, é possível configurar sua posição exata*/
+            background-color: yellow;
+            width: 400px;
+            height: 200px;     
+            margin: auto;
+
+            /*margin: auto; é a forma mais fácil de centralizar um item horizontalmente*/
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        #conteudo2 {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que contém o conteúdo deve ter poosição relativa, e o que é contido precisa ter posição absoluta. Quando se coloca posição absoluta em um objeto, é possível configurar sua posição exata*/
+            background-color: yellow;
+            width: 200px;
+            height: 100px;     
+            margin: auto;
+
+            /*margin: auto; é a forma mais fácil de centralizar um item horizontalmente*/
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -200%);
+        }
+
+        #conteudo3 {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que contém o conteúdo deve ter poosição relativa, e o que é contido precisa ter posição absoluta. Quando se coloca posição absoluta em um objeto, é possível configurar sua posição exata*/
+            background-color: yellow;
+            width: 75px;
+            height: 200px;     
+            margin: auto;
+
+            /*margin: auto; é a forma mais fácil de centralizar um item horizontalmente*/
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(275%, -50%);
+        }
+
+        #conteudo4 {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que contém o conteúdo deve ter poosição relativa, e o que é contido precisa ter posição absoluta. Quando se coloca posição absoluta em um objeto, é possível configurar sua posição exata*/
+            background-color: yellow;
+            width: 75px;
+            height: 200px;     
+            margin: auto;
+
+            /*margin: auto; é a forma mais fácil de centralizar um item horizontalmente*/
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-375%, -50%);
+        }
+
+        #conteudo5 {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que contém o conteúdo deve ter poosição relativa, e o que é contido precisa ter posição absoluta. Quando se coloca posição absoluta em um objeto, é possível configurar sua posição exata*/
+            background-color: yellow;
+            width: 125px;
+            height: 100px;     
+            margin: auto;
+
+            /*margin: auto; é a forma mais fácil de centralizar um item horizontalmente*/
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-160%, 107%);  
+        }
+
+        #conteudo6 {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que contém o conteúdo deve ter poosição relativa, e o que é contido precisa ter posição absoluta. Quando se coloca posição absoluta em um objeto, é possível configurar sua posição exata*/
+            background-color: yellow;
+            width: 125px;
+            height: 100px;     
+            margin: auto;
+
+            /*margin: auto; é a forma mais fácil de centralizar um item horizontalmente*/
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(60%, 107%);  
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+        <article id="conteudo2">
+
+        </article>
+        <article id="conteudo3">
+
+        </article>
+        <article id="conteudo4">
+
+        </article>
+        <article id="conteudo5">
+
+        </article>
+        <article id="conteudo6">
+
+        </article>
+    </section>
+</body>
+</html>
