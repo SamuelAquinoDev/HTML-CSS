@@ -30,6 +30,7 @@ header > h1 {
     "text-transform: uppercase;" --> faz o texto ficar em CAPS LOCK
     */
     font-variant: small-caps;
+    text-shadow: 1px 1px 2px rgb(165, 165, 165);
 }
 
 header > p {
@@ -53,6 +54,11 @@ section {
     line-height: 2em;
 }
 
+section > p {
+    padding-bottom: 2em;
+    font-size: 1.2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -62,16 +68,28 @@ section.normal > p {
     width: 300px;
     text-align: justify;
     margin: 10px;
-}
-
-section.imagem > p {
-    background-color: grey;
-    width: 300px;
-    text-align: center;
-    margin: 10px;
+    padding: 10px;
 }
 
 section.imagem {
     background-color: darkslategrey;
     color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 300px;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
