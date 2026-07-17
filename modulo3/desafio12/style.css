@@ -66,22 +66,28 @@ section.normal {
 
 section.normal > p {
     width: 300px;
+    background-color: rgb(238, 231, 213);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.218);
     text-align: justify;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
 }
 
 section.imagem {
     background-color: darkslategrey;
     color: white;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.5) inset;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.55);
     width: 300px;
     text-align: justify;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
+    text-shadow: 2px 2px 5px black;
 }
 
 section#img01 {
