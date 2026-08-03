@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            border: 2px solid black;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.437) /*inset (opcional) offset-x (deslocamento horizontal) offset-y (deslocamento vertical) blur-radius (desfoque) spread-radius (propagação da sombra) color*/;
+        }
+
+        tr.gray {
+            background-color: lightgray;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        
+        td#destaque {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples):
+
+        1. TABLE = tabela
+            2. TABLE ROW (tr) = linha da tabela
+                3. TABLE HEADER (th) = cabeçalho da tabela
+                3. TABLE DATA (td) = dados databela
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="gray">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="gray">
+            <td>A4</td>
+            <td id="destaque"><strong>B4</strong></td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td><i><del>C5</del></i></td>
+        </tr>
+        <tr class="gray">
+            <td><i><del>A6</del></i></td>
+            <td><i><del>B6</del></i></td>
+            <td><i><del>C6</del></i></td>
+        </tr>
+        <tr>
+            <td>A7</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="gray">
+            <td></td>
+            <td>B8</td>
+            <td><i><del>C8</del></i></td>
+        </tr>
+    </table>
+</body>
+</html>
