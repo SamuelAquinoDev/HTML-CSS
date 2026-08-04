@@ -15,15 +15,17 @@
             border: 2px solid black;
             box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.437) /*inset (opcional) offset-x (deslocamento horizontal) offset-y (deslocamento vertical) blur-radius (desfoque) spread-radius (propagação da sombra) color*/;
         }
-        
+
         td {
             border: 1px solid black;
             padding: 5px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: top; /* Alinhamento Vertical */
         }
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>Minha <del>primeira</del> segunda tabela</h1>
     <!--
         HIERARQUIA DE TABELAS (simples):
 
@@ -50,28 +52,28 @@
         </tr>
         <tr>
             <td>A4</td>
-            <td><strong>B4</strong></td>
+            <td>B4</td>
             <td>C4</td>
         </tr>
         <tr>
             <td>A5</td>
             <td>B5</td>
-            <td><i><del>C5</del></i></td>
+            <td>C5</td>
         </tr>
         <tr>
-            <td><i><del>A6</del></i></td>
-            <td><i><del>B6</del></i></td>
-            <td><i><del>C6</del></i></td>
+            <td>A6</td>
+            <td>B6</td>
+            <td>C6</td>
         </tr>
         <tr>
             <td>A7</td>
-            <td></td>
-            <td></td>
+            <td>B7</td>
+            <td>C7</td>
         </tr>
         <tr>
-            <td></td>
+            <td>A8</td>
             <td>B8</td>
-            <td><i><del>C8</del></i></td>
+            <td>C8</td>
         </tr>
     </table>
 </body>
