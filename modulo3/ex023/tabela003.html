@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.274);
+        }
+
+        table {
+            width: 750px;
+            border-collapse: collapse;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.548);
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        tfoot, thead {
+            background-color: rgb(47, 47, 47);
+            color: whitesmoke;
+        }
+
+        #diferentao {
+            background-color: white;
+            color: black;
+        }
+
+        strong {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    
+    <!--
+        ANATOMIA PARA TABELAS GRANDES:
+
+        TABLE 
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% do Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+                <td>21,59%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 393 441</td>
+                <td>10,02%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 223 547</td>
+                <td>8,07%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 870 907</td>
+                <td>6,97%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 890 517</td>
+                <td>5,57%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 233 263</td>
+                <td>5,26%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 562 007</td>
+                <td>4,48%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9 268 836</td>
+                <td>4,34%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 711 196</td>
+                <td>4,08%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>8 187 029</td>
+                <td>3,84%</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes:</th>
+                <td><strong>213 421 037</strong></td>
+                <td id="diferentao">100%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
