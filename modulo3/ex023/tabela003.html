@@ -17,6 +17,17 @@
             width: 750px;
             border-collapse: collapse;
             box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.548);
+            text-align: center;
+        }
+
+        caption {
+            background-color: rgb(26, 96, 0);
+            color: whitesmoke;
+            padding: 8px;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            font-variant: small-caps;
         }
 
         td, th {
@@ -46,6 +57,7 @@
         ANATOMIA PARA TABELAS GRANDES:
 
         TABLE 
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -55,11 +67,14 @@
     -->
 
     <table>
+        <caption>
+            <strong>População das Unidades Federativas Brasileiras</strong>
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% do Total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% do Total</th>
             </tr>
         </thead>
 
@@ -118,8 +133,8 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes:</th>
-                <td><strong>213 421 037</strong></td>
+                <th scope="row">Total de Habitantes:</th>
+                <td class="num"><strong>213 421 037</strong></td>
                 <td id="diferentao">100%</td>
             </tr>
         </tfoot>
