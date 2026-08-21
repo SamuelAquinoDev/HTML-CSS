@@ -23,12 +23,28 @@
             font-variant: small-caps;
             font-weight: bolder;
             padding: 10px;
-            background-color: rgb(165, 61, 42);
+            background-color: #a53d2a;
         }
 
         tr, th, td {
             border: 2px solid black;
-            padding: 5px;
+            padding: 7px;
+        }
+
+        col.cnome {
+            background-color: #120afd;
+        }
+
+        /* col.csexo, col.cidade {
+            background-color: yellow;
+        } OU -----> */
+
+        col.csexoidade {
+            background-color: yellow;
+        }
+
+        col.cprof {
+            background-color: green;
         }
     </style>
 </head>
@@ -36,6 +52,11 @@
     <h1>Exercício de Tabela</h1>
 
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexoidade" span="2">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th>Nome</th>
@@ -48,6 +69,36 @@
             <td>Feminino</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>Masculino</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>Masculino</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Feminino</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>Masculino</td>
+            <td>22</td>
+            <td>Nutricionista</td>
         </tr>
     </table>
 </body>
