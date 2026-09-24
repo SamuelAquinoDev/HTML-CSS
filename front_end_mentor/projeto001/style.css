@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "NotoSans";
+    src: url(assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "NotoSansIt";
+    src: url(assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "NotoSansBo";
+    src: url(assets/fonts/static/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "NotoSansMed";
+    src: url(assets/fonts/static/NotoSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "NotoSansReg";
+    src: url(assets/fonts/static/NotoSans-Regular.ttf);
+}
+
+:root {
+    --fonte-principal: 'NotoSans', sans-serif;
+    --fonte-italico: 'NotoSansIt', sans-serif;
+    --fonte-conguitos: 'NotoSansBo', sans-serif;
+    --fonte-media: 'NotoSansMed', sans-serif;
+    --fonte-regular: 'NotoSansReg', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, rgb(255, 71, 71), rgb(255, 163, 71)) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h1#tituloprincipal {
+    font-family: var(--fonte-principal);
+    margin: 50px;
+}
+
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
