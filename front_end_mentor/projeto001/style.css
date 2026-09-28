@@ -40,14 +40,38 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(to top, rgb(255, 71, 71), rgb(255, 163, 71)) no-repeat;
+    background: linear-gradient(to bottom, #070920, #0B1643) no-repeat;
     background-size: cover;
     text-align: center;
 }
 
-h1#tituloprincipal {
-    font-family: var(--fonte-principal);
-    margin: 50px;
+div#title {
+    background: #1F2535;
+    padding: 13px 5px 10px 5px;
+    border-radius: 15px;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85vw;
+}
+
+img#logo {
+    position: relative;
+    right: 530px;
+    bottom: 50%;
+}
+
+img#moon {
+    display: none;
+}
+
+img#sun {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: #3c3d41;
+    padding: 20px;
 }
 
 .attribution { 
