@@ -1,0 +1,16 @@
+OUTUBRO ROSA 2026 — SENAI CAPIVARI DE BAIXO
+
+SITE RESPONSIVO PARA COMPUTADOR E CELULAR
+
+1. Crie um repositório PÚBLICO no GitHub.
+2. Envie o arquivo index.html para a raiz do repositório.
+3. Acesse Settings > Pages > Build and deployment.
+4. Em Source, escolha Deploy from a branch; branch main e pasta /(root). Salve.
+5. Aguarde a publicação e copie o endereço fornecido pelo GitHub Pages.
+6. Abra o endereço no celular e teste o menu, os botões e os links dos vídeos.
+7. Gere o QR Code somente com o endereço DEFINITIVO publicado.
+
+O HTML contém imagens e estilos no próprio arquivo. Os vídeos abrem no YouTube.
+O botão WhatsApp compartilha o endereço público quando o site estiver publicado.
+
+IMPORTANTE: confirmar autorização institucional para uso da identificação SENAI e publicação dos nomes dos estudantes.
